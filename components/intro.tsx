@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
+import { SiTistory } from "react-icons/si";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
@@ -31,8 +32,8 @@ export default function Intro() {
             }}
           >
             <Image
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=368&h=368&q=100"
-              alt="Ricardo portrait"
+              src="/junhui_portrait.png"
+              alt="junhui portrait"
               width="192"
               height="192"
               quality="95"
@@ -62,15 +63,14 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Ricardo.</span> I'm a{" "}
-        <span className="font-bold">full-stack developer</span> with{" "}
-        <span className="font-bold">8 years</span> of experience. I enjoy
-        building <span className="italic">sites & apps</span>. My focus is{" "}
-        <span className="underline">React (Next.js)</span>.
+        <span className="font-bold">안녕하세요, 저는 강준희 입니다.</span> 저는{" "}
+        <span className="font-bold">3년 경력의 프론트엔드 개발자</span> 입니다.{" "}
+        요즘 제가 관심있게 공부하는 분야는{" "}
+        <span className="underline">React (Next.js)</span> 입니다.
       </motion.h1>
 
       <motion.div
-        className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
+        className="flex flex-col items-center justify-center gap-2 px-4 text-lg font-medium sm:flex-row"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
@@ -79,23 +79,23 @@ export default function Intro() {
       >
         <Link
           href="#contact"
-          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+          className="flex items-center gap-2 py-3 text-white transition bg-gray-900 rounded-full outline-none group px-7 focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105"
           onClick={() => {
             setActiveSection("Contact");
             setTimeOfLastClick(Date.now());
           }}
         >
-          Contact me here{" "}
-          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
+          연락하기{" "}
+          <BsArrowRight className="transition opacity-70 group-hover:translate-x-1" />
         </Link>
 
         <a
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
+          className="flex items-center gap-2 py-3 transition bg-white rounded-full outline-none cursor-pointer group px-7 focus:scale-110 hover:scale-110 active:scale-105 borderBlack dark:bg-white/10"
           href="/CV.pdf"
           download
         >
-          Download CV{" "}
-          <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
+          PDF 다운로드{" "}
+          <HiDownload className="transition opacity-60 group-hover:translate-y-1" />
         </a>
 
         <a
@@ -103,7 +103,7 @@ export default function Intro() {
           href="https://linkedin.com"
           target="_blank"
         >
-          <BsLinkedin />
+          <SiTistory />
         </a>
 
         <a
