@@ -2,33 +2,33 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact, FaVuejs } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import ubuilderImg from "@/public/ubuilder.png";
+import lotteRentacarImg from "@/public/lotte_rentacar.png";
+import odnImg from "@/public/odn.png";
 
 export const links = [
   {
-    name: "Home",
+    name: "홈",
     hash: "#home",
   },
   {
-    name: "About",
+    name: "자기소개",
     hash: "#about",
   },
   {
-    name: "Projects",
+    name: "프로젝트",
     hash: "#projects",
   },
   {
-    name: "Skills",
+    name: "스킬",
     hash: "#skills",
   },
   {
-    name: "Experience",
+    name: "경험",
     hash: "#experience",
   },
   {
-    name: "Contact",
+    name: "연락처",
     hash: "#contact",
   },
 ] as const;
@@ -70,25 +70,25 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "UBuilder",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "자체 솔루션 프로그램의 공통 컴포넌트를 개발을 했습니다. 입력 폼에 필요한 여러가지 인풋, 데이트 피커, 트리 등을 개발했습니다.",
+    tags: ["Vue3", "Typescript"],
+    imageUrl: ubuilderImg,
   },
   {
-    title: "rmtDev",
+    title: "롯데렌터카",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "롯데렌터카 여정 개선사업으로, 지도에서 렌트장소를 선택하는 기능을 개발했습니다. 네이버 지도, 구글지도로 위치지정, 차량 반납 불가장소 딤처리등을 개발했습니다.",
+    tags: ["JSP"],
+    imageUrl: lotteRentacarImg,
   },
   {
-    title: "Word Analytics",
+    title: "오디엔",
     description:
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+    tags: ["React", "Typescript"],
+    imageUrl: odnImg,
   },
 ] as const;
 

@@ -9,7 +9,7 @@ import SubmitBtn from "./submit-btn";
 import toast from "react-hot-toast";
 
 export default function Contact() {
-  const { ref } = useSectionInView("Contact");
+  const { ref } = useSectionInView("연락처");
 
   return (
     <motion.section
@@ -29,18 +29,17 @@ export default function Contact() {
         once: true,
       }}
     >
-      <SectionHeading>Contact me</SectionHeading>
+      <SectionHeading>연락처</SectionHeading>
 
-      <p className="text-gray-700 -mt-6 dark:text-white/80">
-        Please contact me directly at{" "}
+      <p className="-mt-6 text-gray-700 dark:text-white/80">
         <a className="underline" href="mailto:example@gmail.com">
-          example@gmail.com
+          woajun@naver.com
         </a>{" "}
-        or through this form.
+        으로 연락주시거나, 아래 폼을 작성해주세요.
       </p>
 
       <form
-        className="mt-10 flex flex-col dark:text-black"
+        className="flex flex-col mt-10 dark:text-black"
         action={async (formData) => {
           const { data, error } = await sendEmail(formData);
 
@@ -53,17 +52,17 @@ export default function Contact() {
         }}
       >
         <input
-          className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className="px-4 transition-all rounded-lg h-14 borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 dark:outline-none"
           name="senderEmail"
           type="email"
           required
           maxLength={500}
-          placeholder="Your email"
+          placeholder="보내시는 분 이메일 주소"
         />
         <textarea
-          className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className="p-4 my-3 transition-all rounded-lg h-52 borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 dark:outline-none"
           name="message"
-          placeholder="Your message"
+          placeholder="작성 내용"
           required
           maxLength={5000}
         />

@@ -12,7 +12,7 @@ import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Intro() {
-  const { ref } = useSectionInView("Home", 0.5);
+  const { ref } = useSectionInView("홈", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
@@ -66,7 +66,7 @@ export default function Intro() {
         <span className="font-bold">안녕하세요, 저는 강준희 입니다.</span> 저는{" "}
         <span className="font-bold">3년 경력의 프론트엔드 개발자</span> 입니다.{" "}
         요즘 제가 관심있게 공부하는 분야는{" "}
-        <span className="underline">React (Next.js)</span> 입니다.
+        <span className="underline">React</span> 입니다.
       </motion.h1>
 
       <motion.div
@@ -81,7 +81,7 @@ export default function Intro() {
           href="#contact"
           className="flex items-center gap-2 py-3 text-white transition bg-gray-900 rounded-full outline-none group px-7 focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105"
           onClick={() => {
-            setActiveSection("Contact");
+            setActiveSection("연락처");
             setTimeOfLastClick(Date.now());
           }}
         >
