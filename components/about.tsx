@@ -14,7 +14,7 @@ const I = ({ children }: { children: ReactNode }) => (
 );
 
 export default function About() {
-  const { ref } = useSectionInView("자기소개");
+  const { ref } = useSectionInView("소개");
 
   return (
     <motion.section
@@ -25,7 +25,7 @@ export default function About() {
       transition={{ delay: 0.175 }}
       id="about"
     >
-      <SectionHeading>자기소개</SectionHeading>
+      <SectionHeading>소개</SectionHeading>
       <p className="mb-3">
         인터넷 판매업체에서 송장출력 업무를 담당하며 <B>업무 자동화</B>를
         <I> 독학</I>했습니다. 주로 <B>엑셀 VBA</B>를 활용하여 매크로를 개발하는
