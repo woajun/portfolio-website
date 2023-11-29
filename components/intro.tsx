@@ -4,16 +4,20 @@ import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { BsArrowRight, BsLinkedin } from "react-icons/bs";
+import { BsArrowRight } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { SiTistory } from "react-icons/si";
+import { IoLanguage } from "react-icons/io5";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import { useSearchParams } from "next/navigation";
 
 export default function Intro() {
-  const { ref } = useSectionInView("홈", 0.5);
+  const { ref } = useSectionInView("#home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+  const params = useSearchParams();
+  const isEng = params.get("lang") == "eng";
 
   return (
     <section
@@ -63,10 +67,23 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">안녕하세요, 저는 강준희 입니다.</span> 저는{" "}
-        <span className="font-bold">3년 경력의 프론트엔드 개발자</span> 입니다.{" "}
-        요즘 제가 관심있게 공부하는 분야는{" "}
-        <span className="underline">React</span> 입니다.
+        {isEng ? (
+          <>
+            <span className="font-bold">Hello, I'm Junhui Kang.</span> I am a{" "}
+            <span className="font-bold">
+              front-end developer with 3 years of experience.
+            </span>{" "}
+            These days, the area I am interested in studying is{" "}
+            <span className="underline">React</span>.
+          </>
+        ) : (
+          <>
+            <span className="font-bold">안녕하세요, 저는 강준희 입니다.</span>{" "}
+            저는 <span className="font-bold">3년 경력의 프론트엔드 개발자</span>{" "}
+            입니다. 요즘 제가 관심있게 공부하는 분야는{" "}
+            <span className="underline">React</span> 입니다.
+          </>
+        )}
       </motion.h1>
 
       <motion.div
@@ -81,11 +98,11 @@ export default function Intro() {
           href="#contact"
           className="flex items-center gap-2 py-3 text-white transition bg-gray-900 rounded-full outline-none group px-7 focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105"
           onClick={() => {
-            setActiveSection("연락처");
+            setActiveSection("#contact");
             setTimeOfLastClick(Date.now());
           }}
         >
-          연락하기{" "}
+          {isEng ? 'Contact ' : '연락하기 '}
           <BsArrowRight className="transition opacity-70 group-hover:translate-x-1" />
         </Link>
 
@@ -94,7 +111,7 @@ export default function Intro() {
           href="/CV.pdf"
           download
         >
-          PDF 다운로드{" "}
+          {isEng ? 'PDF Download ' : '다운로드 '}
           <HiDownload className="transition opacity-60 group-hover:translate-y-1" />
         </a>
 
@@ -114,6 +131,13 @@ export default function Intro() {
           >
             <FaGithubSquare />
           </a>
+
+          <Link
+            className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+            href={isEng ? "?lang=kor" : "?lang=eng"}
+          >
+            <IoLanguage />
+          </Link>
         </div>
       </motion.div>
     </section>
