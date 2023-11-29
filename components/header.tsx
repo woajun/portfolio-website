@@ -2,14 +2,43 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { links } from "@/lib/data";
 import Link from "next/link";
 import clsx from "clsx";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import { useTranslate } from "@/i18n/useTranslate";
 
 export default function Header() {
   const { activeSection, setActiveSection, setTimeOfLastClick } =
     useActiveSectionContext();
+
+  const {t} = useTranslate();
+
+  const links = [
+  {
+    name: t('home'),
+    hash: "#home",
+  },
+  {
+    name: t('about'),
+    hash: "#about",
+  },
+  {
+    name: t('projects'),
+    hash: "#projects",
+  },
+  {
+    name: t('skills'),
+    hash: "#skills",
+  },
+  {
+    name: t('experience'),
+    hash: "#experience",
+  },
+  {
+    name: t('contact'),
+    hash: "#contact",
+  },
+] as const;
 
   return (
     <header className="z-[999] relative">

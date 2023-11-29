@@ -6,33 +6,6 @@ import ubuilderImg from "@/public/ubuilder.png";
 import lotteRentacarImg from "@/public/lotte_rentacar.png";
 import odnImg from "@/public/odn.png";
 
-export const links = [
-  {
-    name: "홈",
-    hash: "#home",
-  },
-  {
-    name: "소개",
-    hash: "#about",
-  },
-  {
-    name: "프로젝트",
-    hash: "#projects",
-  },
-  {
-    name: "스킬",
-    hash: "#skills",
-  },
-  {
-    name: "경험",
-    hash: "#experience",
-  },
-  {
-    name: "연락처",
-    hash: "#contact",
-  },
-] as const;
-
 export const experiencesData = [
   {
     title: "아재네한우집",
