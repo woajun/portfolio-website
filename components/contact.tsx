@@ -7,10 +7,11 @@ import { useSectionInView } from "@/lib/hooks";
 import { sendEmail } from "@/actions/sendEmail";
 import SubmitBtn from "./submit-btn";
 import toast from "react-hot-toast";
+import { useTranslate } from "@/i18n/useTranslate";
 
 export default function Contact() {
   const { ref } = useSectionInView("#contact");
-
+  const { t } = useTranslate();
   return (
     <motion.section
       id="contact"
@@ -29,13 +30,10 @@ export default function Contact() {
         once: true,
       }}
     >
-      <SectionHeading>연락처</SectionHeading>
+      <SectionHeading>{t("contactTitle")}</SectionHeading>
 
       <p className="-mt-6 text-gray-700 dark:text-white/80">
-        <a className="underline" href="mailto:example@gmail.com">
-          woajun@naver.com
-        </a>{" "}
-        으로 연락주시거나, 아래 폼을 작성해주세요.
+        {t("contactBody")}
       </p>
 
       <form
@@ -57,12 +55,12 @@ export default function Contact() {
           type="email"
           required
           maxLength={500}
-          placeholder="보내시는 분 이메일 주소"
+          placeholder={t("contactEmail")}
         />
         <textarea
           className="p-4 my-3 transition-all rounded-lg h-52 borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 dark:outline-none"
           name="message"
-          placeholder="작성 내용"
+          placeholder={t("contactMessage")}
           required
           maxLength={5000}
         />

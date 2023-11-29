@@ -1,10 +1,11 @@
 import React from "react";
 import { FaPaperPlane } from "react-icons/fa";
 import { experimental_useFormStatus as useFormStatus } from "react-dom";
+import { useTranslate } from "@/i18n/useTranslate";
 
 export default function SubmitBtn() {
   const { pending } = useFormStatus();
-
+  const { t } = useTranslate();
   return (
     <button
       type="submit"
@@ -15,7 +16,7 @@ export default function SubmitBtn() {
         <div className="w-5 h-5 border-b-2 border-white rounded-full animate-spin"></div>
       ) : (
         <>
-          전송{" "}
+          {t('submit')}
           <FaPaperPlane className="text-xs transition-all opacity-70 group-hover:translate-x-1 group-hover:-translate-y-1" />{" "}
         </>
       )}

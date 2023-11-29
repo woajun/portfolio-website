@@ -1,0 +1,131 @@
+import { B, U, I } from "./fonts";
+import React from "react";
+import { CgWorkAlt } from "react-icons/cg";
+import { FaReact, FaVuejs } from "react-icons/fa";
+import { LuGraduationCap } from "react-icons/lu";
+import ubuilderImg from "@/public/ubuilder.png";
+import lotteRentacarImg from "@/public/lotte_rentacar.png";
+import odnImg from "@/public/odn.png";
+
+const kor = {
+  home: "홈",
+  about: "소개",
+  projects: "프로젝트",
+  skills: "스킬",
+  experience: "경험",
+  contact: "연락처",
+  intro: (
+    <>
+      <B>안녕하세요, 저는 강준희 입니다.</B>{" "}
+      저는 <B>3년 경력의 프론트엔드 개발자</B>{" "}
+      입니다. 요즘 제가 관심있게 공부하는 분야는{" "}
+      <U>React</U> 입니다.
+    </>
+  ),
+  contactBtn: "연락하기 ",
+  pdfDownload: "PDF 다운로드 ",
+  aboutTitle: "소개",
+  aboutBody: (
+    <>
+      <p className="mb-3">
+        인터넷 판매업체에서 송장출력 업무를 담당하며 <B>업무 자동화</B>를
+        <I> 독학</I>했습니다. 주로 <B>엑셀 VBA</B>를 활용하여 매크로를 개발하는
+        과정에서 능력을 발휘해, 이를 통해 <B>개발자로 진로를 선택</B>하게
+        되었습니다. 3개월 동안의 국비지원 교육을 수료한 후, 아큐라소프트에
+        입사하여 2년 1개월간 자사 솔루션 프론트엔드 개발에 참여했습니다. 그 후,
+        디지털 치료제 개발사 오디엔에 입사하여 디지털 치료제 프론트엔드 개발에
+        힘쓰고 있습니다.
+      </p>
+      <p>
+        <B>논리적 사고</B>를 기반으로 문제를 해결하는 것에 흥미를 느껴, 현재의
+        개발 업무에서도 큰 만족감을 느끼고 있습니다. 앞으로도{" "}
+        <B>문제 해결 능력</B>과<B>창의성</B>을 바탕으로 새로운 기술과 도전에{" "}
+        <I>열린 마음</I>으로 성장해 나가고자 합니다.
+      </p>
+    </>
+  ),
+  projectTitle: "프로젝트",
+  projectsData: [
+    {
+      title: "UBuilder",
+      description:
+        "자체 솔루션 프로그램의 공통 컴포넌트를 개발을 했습니다. 입력 폼에 필요한 여러가지 인풋, 데이트 피커, 트리 등을 개발했습니다.",
+      tags: ["Vue3", "Typescript"],
+      imageUrl: ubuilderImg,
+    },
+    {
+      title: "롯데렌터카",
+      description:
+        "롯데렌터카 여정 개선사업으로, 지도에서 렌트장소를 선택하는 기능을 개발했습니다. 네이버 지도, 구글지도로 위치지정, 차량 반납 불가장소 딤처리등을 개발했습니다.",
+      tags: ["JSP"],
+      imageUrl: lotteRentacarImg,
+    },
+    {
+      title: "오디엔",
+      description:
+        "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+      tags: ["React", "Typescript"],
+      imageUrl: odnImg,
+    },
+  ],
+  skillsTitle: "스킬",
+  skillsData: [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "TypeScript",
+    "JSP",
+    "Vue3",
+    "React",
+    "Next.js",
+    "Git",
+    "Tailwind",
+  ],
+  experienceTitle: "경험",
+  experiencesData: [
+    {
+      title: "아재네한우집",
+      location: "서울시 성동구",
+      description:
+        "한우 인터넷 판매업체에서 송장출력, 판매집계, 이익금 계산, 수율계산, 순수익계산 등을 엑셀프로그램으로 하다가, 매크로를 알게되어 VBA 로 매크로를 제작했습니다.",
+      icon: React.createElement(CgWorkAlt),
+      date: "2019",
+    },
+    {
+      title: "국비지원교육",
+      location: "서울시 강남구",
+      description:
+        "매크로 제작에 재미를 느껴 퇴사 후 국비지원과정을 통해 개발자로 전직했습니다.",
+      icon: React.createElement(LuGraduationCap),
+      date: "2021",
+    },
+    {
+      title: "아큐라소프트",
+      location: "서울시 성동구",
+      description:
+        "아큐라소프트가 진행하는 모든 사업의 바탕이 되는 솔루션인 UBuilder팀의 연구원으로 근무중에 있습니다. 주로 vue3(ts)를 사용해서 UI 컴포넌트를 제작 및 업데이트하고 롤업하여 npm에 배포하고 있습니다.",
+      icon: React.createElement(FaVuejs),
+      date: "2021 - 2023",
+    },
+    {
+      title: "오디엔",
+      location: "서울시 동대문구",
+      description:
+        "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      icon: React.createElement(FaReact),
+      date: "2023 - 현재",
+    },
+  ],
+  contactTitle: "연락처",
+  contactBody: (<>
+    <a className="underline" href="mailto:woajun@naver.com">
+      woajun@naver.com
+    </a>{" "}
+    으로 연락주시거나, 아래 폼을 작성해주세요.
+    </>),
+  contactEmail: "보내시는 분 이메일 주소",
+  contactMessage: "작성 내용",
+  submit: "전송 "
+};
+
+export default kor;

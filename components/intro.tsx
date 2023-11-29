@@ -12,12 +12,15 @@ import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import { useSearchParams } from "next/navigation";
+import { useTranslate } from "@/i18n/useTranslate";
 
 export default function Intro() {
   const { ref } = useSectionInView("#home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
   const params = useSearchParams();
   const isEng = params.get("lang") == "eng";
+
+  const {t} = useTranslate();
 
   return (
     <section
@@ -67,23 +70,7 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        {isEng ? (
-          <>
-            <span className="font-bold">Hello, I'm Junhui Kang.</span> I am a{" "}
-            <span className="font-bold">
-              front-end developer with 3 years of experience.
-            </span>{" "}
-            These days, the area I am interested in studying is{" "}
-            <span className="underline">React</span>.
-          </>
-        ) : (
-          <>
-            <span className="font-bold">안녕하세요, 저는 강준희 입니다.</span>{" "}
-            저는 <span className="font-bold">3년 경력의 프론트엔드 개발자</span>{" "}
-            입니다. 요즘 제가 관심있게 공부하는 분야는{" "}
-            <span className="underline">React</span> 입니다.
-          </>
-        )}
+        {t('intro')}
       </motion.h1>
 
       <motion.div
@@ -102,7 +89,7 @@ export default function Intro() {
             setTimeOfLastClick(Date.now());
           }}
         >
-          {isEng ? 'Contact ' : '연락하기 '}
+          {t('contactBtn')}
           <BsArrowRight className="transition opacity-70 group-hover:translate-x-1" />
         </Link>
 
@@ -111,7 +98,7 @@ export default function Intro() {
           href="/CV.pdf"
           download
         >
-          {isEng ? 'PDF Download ' : '다운로드 '}
+          {t("pdfDownload")}
           <HiDownload className="transition opacity-60 group-hover:translate-y-1" />
         </a>
 
