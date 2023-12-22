@@ -66,10 +66,13 @@ export default function Portfolio({
               switch (e.type) {
                 case 'website':
                   icon = <CgWebsite />
+                  break;
                 case 'git':
                   icon = <FaGithubSquare />
+                  break;
                 case 'youtube':
                   icon = <FaYoutube />
+                  break;
                 default:
                   break;
               }
