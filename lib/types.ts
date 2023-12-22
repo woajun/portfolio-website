@@ -1,1 +1,1 @@
-export type SectionName = '#home' | '#about' | "#projects" | "#skills" | "#experience" | "#contact"
+export type SectionName = '#home' | '#about' | "#projects" | "#skills" | "#experience" | "#contact" | "#portfolios"

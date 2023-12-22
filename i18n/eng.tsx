@@ -7,6 +7,15 @@ import kor from "./kor";
 import ubuilderImg from "@/public/ubuilder.png";
 import lotteRentacarImg from "@/public/lotte_rentacar.png";
 import odnImg from "@/public/odn.png";
+import porftfolioAngelpodsImg from "@/public/portfolio_angelpods.png";
+import porftfolioCoordinateSearcherImg from "@/public/portfolio_coordinate_searcher.png";
+import porftfolioFitnessmanagerImg from "@/public/portfolio_fitnessmanager.png";
+import porftfolioJsongrouperImg from "@/public/portfolio_jsongrouper.png";
+import porftfolioRefectoringImg from "@/public/portfolio_refectoring.jpg";
+import porftfolioTaejowangunImg from "@/public/portfolio_taejowangun.png";
+import porftfolioWinterfoodiesImg from "@/public/portfolio_winterfoodies.png";
+import porftfolioJuniComponentsImg from "@/public/portfolio_juni_components.png";
+import porftfolioReactivityImg from "@/public/portfolio_reactivity.png";
 
 const eng: typeof kor = {
   home: "home",
@@ -74,6 +83,151 @@ const eng: typeof kor = {
     "Git",
     "Tailwind",
   ],
+  portfolioTitle: "Portfolio",
+portfolioData: [
+  {
+    title: "Angel Pods",
+    period: "21.05 ~ 21.09",
+    description: "1. Planned and developed a service for registering wireless earphone serial numbers and facilitating the retrieval of lost items through serial number lookup. 2. Solely developed using JSP and deployed on AWS.",
+    tags: ["JSP/Servlet", "Bootstrap", "MySQL", "AWS"],
+    image: porftfolioAngelpodsImg, 
+    links: [
+      {
+        type: "youtube",
+        link: ""
+      },
+      {
+        type: "git",
+        link: ""
+      },
+    ],
+  },
+  {
+    title: "Refactoring Exercise",
+    period: "22.05 ~ 22.06",
+    description: "Designed and developed a site for practicing refactoring.",
+    tags: ["JSP/Servlet", "Bootstrap", "MySQL", "AWS"],
+    image: porftfolioReactivityImg,
+    links: [
+      {
+        type: "git",
+        link: "https://github.com/woajun/Refactoring-vue3"
+      },
+    ],
+  },
+  {
+    title: "Reactivity (22.07)",
+    period: "22.07",
+    description: "Studied the principles of reactivity by implementing Vue's reactivity in vanilla JavaScript.",
+    tags: ["Vanilla JavaScript", "Vue", "Reactivity"],
+    image: porftfolioRefectoringImg,
+    links: [
+      {
+        type: "git",
+        link: "https://github.com/woajun/reactivity"
+      },
+    ],
+  },
+  {
+    title: "Schedule Divider (22.08 ~ 23.01)",
+    period: "22.08 ~ 23.01",
+    description: "Developed a program for fair distribution of working hours among employees.",
+    tags: ["React", "Redux", "Firebase"],
+    image: porftfolioAngelpodsImg, 
+    links: [
+      {
+        type: "git",
+        link: "https://github.com/woajun/schedule-divider"
+      },
+    ],
+  },
+  {
+    title: "JSON Grouper (23.03 ~ 23.04)",
+    period: "23.03 ~ 23.04",
+    description: "Developed a project for convenience in naming variables and converting Excel files to JSON format following specific rules.",
+    tags: ["Node.js", "JavaScript", "Private"],
+    image: porftfolioJsongrouperImg, 
+    links: [
+      {
+        type: "git",
+        link: "https://github.com/woajun/json-grouper"
+      },
+    ],
+  },
+  {
+    title: "Fitness Manager (23.01 ~ 23.05)",
+    period: "23.01 ~ 23.05",
+    description: "Program for measuring and recording exercise time.",
+    tags: ["React", "Firebase", "Chart.js"],
+    image: porftfolioFitnessmanagerImg, 
+    links: [
+      {
+        type: "git",
+        link: "https://github.com/woajun/fitness-manager"
+      },
+    ],
+  },
+  {
+    title: "Winter Foodies",
+    period: "23.08 ~ ",
+    description: "Mobile site for ordering and picking up winter snacks.",
+    tags: ["React", "Firebase", "Mobile"],
+    image: porftfolioWinterfoodiesImg, 
+    links: [
+      {
+        type: "git",
+        link: "https://github.com/woajun/Winterfoodies"
+      },
+    ],
+  },
+  {
+    title: "Taejo Wangun",
+    period: "23.08 ~ ",
+    description: "Site for using unused devices as security devices.",
+    tags: ["React", "Firebase", "Security"],
+    image: porftfolioTaejowangunImg, 
+    links: [
+      {
+        type: "git",
+        link: "https://github.com/TaejoWangun/TaejoWangun"
+      },
+    ],
+  },
+  {
+    title: "Coordinate Searcher",
+    period: "23.10 ~ ",
+    description: "Site for easily searching latitude and longitude.",
+    tags: ["React", "Firebase", "Geolocation"],
+    image: porftfolioCoordinateSearcherImg, 
+    links: [
+      {
+        type: "git",
+        link: "https://github.com/woajun/kakao-coordinate-searcher"
+      },
+      {
+        type: "website",
+        link: "https://latlongsearch.netlify.app/"
+      },
+    ],
+  },
+  {
+    title: "Juni Components",
+    period: "23.12",
+    description: "Collection of frequently used React components.",
+    tags: ["React", "Tailwind", "Styled-Components"],
+    image: porftfolioJuniComponentsImg, 
+    links: [
+      {
+        type: "git",
+        link: ""
+      },
+      {
+        type: "website",
+        link: ""
+      },
+    ],
+  },
+],
   experienceTitle: "Experience",
     experiencesData: [
     {

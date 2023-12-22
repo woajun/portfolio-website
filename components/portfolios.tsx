@@ -5,6 +5,8 @@ import SectionHeading from "./section-heading";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
 import { useTranslate } from "@/i18n/useTranslate";
+import Portfolio from "./portfolio";
+import { StaticImageData } from "next/image";
 
 const fadeInAnimationVariants = {
   initial: {
@@ -20,33 +22,36 @@ const fadeInAnimationVariants = {
   }),
 };
 
-export default function Skills() {
-  const { ref } = useSectionInView("#skills");
+export type Portfolio = {
+	title: string
+  period: string
+	description: string
+	tags: string[]
+	image: StaticImageData
+	links: Array<{
+		type: string
+		link: string
+	}>
+}
+
+export default function Portfolios() {
+  const { ref } = useSectionInView("#portfolios");
   const { t } = useTranslate();
+  const portfolios: Portfolio[] = t("portfolioData");
   return (
     <section
-      id="skills"
+      id="portfolios"
       ref={ref}
-      className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40"
+      className="mb-28 max-w-[53rem] scroll-mt-28 sm:mb-40 text-sm"
     >
-      <SectionHeading>{t("skillsTitle")}</SectionHeading>
-      <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
-        {t("skillsData").map((skill, index) => (
-          <motion.li
-            className="px-5 py-3 bg-white borderBlack rounded-xl dark:bg-white/10 dark:text-white/80"
-            key={index}
-            variants={fadeInAnimationVariants}
-            initial="initial"
-            whileInView="animate"
-            viewport={{
-              once: true,
-            }}
-            custom={index}
-          >
-            {skill}
-          </motion.li>
+      <SectionHeading>{t("portfolioTitle")}</SectionHeading>
+      <div>
+        {portfolios.map((portfolio, index) => (
+					<React.Fragment key={index}>
+						<Portfolio {...portfolio} />
+					</React.Fragment>
         ))}
-      </ul>
+      </div>
     </section>
   );
 }

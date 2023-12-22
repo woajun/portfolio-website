@@ -6,6 +6,15 @@ import { LuGraduationCap } from "react-icons/lu";
 import ubuilderImg from "@/public/ubuilder.png";
 import lotteRentacarImg from "@/public/lotte_rentacar.png";
 import odnImg from "@/public/odn.png";
+import porftfolioAngelpodsImg from "@/public/portfolio_angelpods.png";
+import porftfolioCoordinateSearcherImg from "@/public/portfolio_coordinate_searcher.png";
+import porftfolioFitnessmanagerImg from "@/public/portfolio_fitnessmanager.png";
+import porftfolioJsongrouperImg from "@/public/portfolio_jsongrouper.png";
+import porftfolioRefectoringImg from "@/public/portfolio_refectoring.jpg";
+import porftfolioTaejowangunImg from "@/public/portfolio_taejowangun.png";
+import porftfolioWinterfoodiesImg from "@/public/portfolio_winterfoodies.png";
+import porftfolioJuniComponentsImg from "@/public/portfolio_juni_components.png";
+import porftfolioReactivityImg from "@/public/portfolio_reactivity.png";
 
 const kor = {
   home: "홈",
@@ -88,7 +97,7 @@ const kor = {
       period: "21.05 ~ 21.09",
       description: "1. 무선이어폰 일련번호를 등록하여, 추후 분실 했을 때 일련번호 조회로 찾아주는 분실물 조회 서비스를 기획 및 개발 했습니다. 2. 1인 프로젝트로, jsp로 개발하여 aws를 사용해 배포까지 했습니다.",
       tags: ["JSP/Servlet", "Bootstrap", "Mysql", "AWS"],
-      imageLinks: [], 
+      image: porftfolioAngelpodsImg, 
       links: [
         {
           type: "youtube",
@@ -105,7 +114,7 @@ const kor = {
       period: "22.05 ~ 22.06",
       description: "리펙토링을 체화하기 위한 사이트를 제작했습니다.",
       tags: ["JSP/Servlet", "Bootstrap", "Mysql", "AWS"],
-      imageLinks: [],
+      image: porftfolioReactivityImg,
       links: [
         {
           type: "git",
@@ -118,6 +127,7 @@ const kor = {
       period: "22.07",
       description: "vue의 반응형을 바닐라 자바스크립트로 구현해 동작원리를 학습했습니다.",
       tags: ["Vanilla JavaScript", "Vue", "Reactivity"],
+      image: porftfolioRefectoringImg,
       links: [
         {
           type: "git",
@@ -130,7 +140,7 @@ const kor = {
       period: "22.08 ~ 23.01",
       description: "근무자들이 근무시간을 최대한 공평하게 분배하기 위한 프로그램입니다.",
       tags: ["React", "Redux", "Firebase"],
-      imageLinks: [], 
+      image: porftfolioAngelpodsImg, 
       links: [
         {
           type: "git",
@@ -143,7 +153,7 @@ const kor = {
       period: "23.03 ~ 23.04",
       description: "업무의 편의를 위해 개발한 프로젝트로, 변수명 일관성 유지 및 엑셀파일을 특정 규칙으로 json 형태로 묶어 변환해주는 기능을 제공합니다.",
       tags: ["Node.js", "JavaScript", "Private"],
-      imageLinks: [], 
+      image: porftfolioJsongrouperImg, 
       links: [
         {
           type: "git",
@@ -156,7 +166,7 @@ const kor = {
       period: "23.01 ~ 23.05",
       description: "운동 시간을 측정하고 기록하는 프로그램입니다.",
       tags: ["React", "Firebase", "Chart.js"],
-      imageLinks: [], 
+      image: porftfolioFitnessmanagerImg, 
       links: [
         {
           type: "git",
@@ -169,7 +179,7 @@ const kor = {
       period: "23.08 ~ ",
       description: "겨울 간식을 주문하고 찾아가는 모바일용 사이트입니다.",
       tags: ["React", "Firebase", "Mobile"],
-      imageLinks: [], 
+      image: porftfolioWinterfoodiesImg, 
       links: [
         {
           type: "git",
@@ -182,7 +192,7 @@ const kor = {
       period: "23.08 ~ ",
       description: "안쓰는 기기를 방범용으로 사용할 수 있게 해주는 사이트입니다.",
       tags: ["React", "Firebase", "Security"],
-      imageLinks: [], 
+      image: porftfolioTaejowangunImg, 
       links: [
         {
           type: "git",
@@ -195,7 +205,7 @@ const kor = {
       period: "23.10 ~ ",
       description: "위경도를 간편하게 검색할 수 있는 사이트입니다.",
       tags: ["React", "Firebase", "Geolocation"],
-      imageLinks: [], 
+      image: porftfolioCoordinateSearcherImg, 
       links: [
         {
           type: "git",
@@ -212,7 +222,7 @@ const kor = {
       period: "23.12",
       description: "자주 사용하는 리엑트 공용 컴포넌트를 모아뒀습니다.",
       tags: ["React", "Tailwind", "Styled-Components"],
-      imageLinks: [], 
+      image: porftfolioJuniComponentsImg, 
       links: [
         {
           type: "git",
