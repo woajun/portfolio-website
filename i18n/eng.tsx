@@ -43,24 +43,23 @@ const eng: typeof kor = {
     {
       title: "UBuilder",
       description:
-      "Developed common components for the in-house solution program. Implemented various inputs, date pickers, trees, and more for input forms.",
+      "(21.10 ~ 23.10) Developed common components for the in-house solution program. Implemented various inputs, date pickers, trees, and more for input forms.",
       tags: ["Vue3", "Typescript"],
       imageUrl: ubuilderImg,
     },
     {
       title: "Lotte Rentacar",
       description:
-      "Contributed to the Lotte Rentacar journey improvement project by developing a feature for selecting rental locations on the map. Implemented location selection using Naver and Google Maps.",
+      "(22.09 ~ 22. 12) Contributed to the Lotte Rentacar journey improvement project by developing a feature for selecting rental locations on the map. Implemented location selection using Naver and Google Maps.",
       tags: ["JSP"],
       imageUrl: lotteRentacarImg,
     },
     {
-      title: "ODN",
-      description:
-        "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-      tags: ["React", "Typescript"],
-      imageUrl: odnImg,
-    },
+      title: "DTX-E66",
+      description: "(23.11 ~ 23.12) A digital therapeutic, web-based platform built using React. Scheduled for release on iOS and the Play Store.",
+      tags: ["React", "Typescript", "Real-name Authentication", "Tailwind", "Styled-components", "ESLint Airbnb", "Yarn", "Chart.js", "Ant Design", "Figma", "Recoil", "Vite"],
+      imageUrl: odnImg
+    }
   ],
   skillsTitle: "Skills",
   skillsData: [
