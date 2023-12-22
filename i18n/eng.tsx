@@ -67,7 +67,7 @@ const eng: typeof kor = {
     {
       title: "DTX-E66",
       description: "(23.11 ~ 23.12) A digital therapeutic, web-based platform built using React. Scheduled for release on iOS and the Play Store.",
-      tags: ["React", "Typescript", "Real-name Authentication", "Tailwind", "Styled-components", "ESLint Airbnb", "Yarn", "Chart.js", "Ant Design", "Figma", "Recoil", "Vite"],
+      tags: ["React", "Typescript", "Real-name Authentication", "Tailwind", "Styled-components", "ESLint Airbnb", "Yarn", "Chart.js", "Ant Design", "Figma", "Recoil", "Vite", "cordova"],
       imageUrl: odnImg
     }
   ],

@@ -74,7 +74,7 @@ const kor = {
       title: "DTX-E66",
       description:
         "(23.11 ~ 23.12) 디지털치료제로, 리엑트를 사용한 웹 기반 사이트 입니다. ios, 플레이스토어 출시 예정입니다.",
-      tags: ["React", "Typescript", "실명인증", "tailwind", "styled-components", "eslint-airbnb", "yarn", "chartjs", "antd", "Figma", "recoil", "vite"],
+      tags: ["React", "Typescript", "실명인증", "tailwind", "styled-components", "eslint-airbnb", "yarn", "chartjs", "antd", "Figma", "recoil", "vite", 'cordova'],
       imageUrl: odnImg,
     },
   ],
