@@ -93,14 +93,14 @@ export default function Intro() {
           <BsArrowRight className="transition opacity-70 group-hover:translate-x-1" />
         </Link>
 
-        <a
+        {/* <a
           className="flex items-center gap-2 py-3 transition bg-white rounded-full outline-none cursor-pointer group px-7 focus:scale-110 hover:scale-110 active:scale-105 borderBlack dark:bg-white/10"
           href="/CV.pdf"
           download
         >
           {t("pdfDownload")}
           <HiDownload className="transition opacity-60 group-hover:translate-y-1" />
-        </a>
+        </a> */}
 
         <div className="flex gap-2">
           <a
