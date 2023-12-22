@@ -81,6 +81,143 @@ const kor = {
     "Git",
     "Tailwind",
   ],
+  portfolioTitle: "포트폴리오",
+  portfolioData: [
+    {
+      title: "엔젤팟",
+      period: "21.05 ~ 21.09",
+      description: "1. 무선이어폰 일련번호를 등록하여, 추후 분실 했을 때 일련번호 조회로 찾아주는 분실물 조회 서비스를 기획 및 개발 했습니다. 2. 1인 프로젝트로, jsp로 개발하여 aws를 사용해 배포까지 했습니다.",
+      tags: ["JSP/Servlet", "Bootstrap", "Mysql", "AWS"],
+      imageLinks: [], 
+      links: [
+        {
+          type: "youtube",
+          link: ""
+        },
+        {
+          type: "git",
+          link: ""
+        },
+      ],
+    },
+    {
+      title: "리팩토링 연습",
+      period: "22.05 ~ 22.06",
+      description: "리펙토링을 체화하기 위한 사이트를 제작했습니다.",
+      tags: ["JSP/Servlet", "Bootstrap", "Mysql", "AWS"],
+      imageLinks: [],
+      links: [
+        {
+          type: "git",
+          link: "https://github.com/woajun/Refactoring-vue3"
+        },
+      ],
+    },
+    {
+      title: "reactivity (22.07)",
+      period: "22.07",
+      description: "vue의 반응형을 바닐라 자바스크립트로 구현해 동작원리를 학습했습니다.",
+      tags: ["Vanilla JavaScript", "Vue", "Reactivity"],
+      links: [
+        {
+          type: "git",
+          link: "https://github.com/woajun/reactivity"
+        },
+      ],
+    },
+    {
+      title: "schedule-divider (22.08 ~ 23.01)",
+      period: "22.08 ~ 23.01",
+      description: "근무자들이 근무시간을 최대한 공평하게 분배하기 위한 프로그램입니다.",
+      tags: ["React", "Redux", "Firebase"],
+      links: [
+        {
+          type: "git",
+          link: "https://github.com/woajun/schedule-divider"
+        },
+      ],
+    },
+    {
+      title: "json-grouper (23.03 ~ 23.04)",
+      period: "23.03 ~ 23.04",
+      description: "업무의 편의를 위해 개발한 프로젝트로, 변수명 일관성 유지 및 엑셀파일을 특정 규칙으로 json 형태로 묶어 변환해주는 기능을 제공합니다.",
+      tags: ["Node.js", "JavaScript", "Private"],
+      links: [
+        {
+          type: "git",
+          link: "https://github.com/woajun/json-grouper"
+        },
+      ],
+    },
+    {
+      title: "피트니스 매니저 (23.01 ~ 23.05)",
+      period: "23.01 ~ 23.05",
+      description: "운동 시간을 측정하고 기록하는 프로그램입니다.",
+      tags: ["React", "Firebase", "Chart.js"],
+      links: [
+        {
+          type: "git",
+          link: "https://github.com/woajun/fitness-manager"
+        },
+      ],
+    },
+    {
+      title: "윈터푸디스",
+      period: "23.08 ~ ",
+      description: "겨울 간식을 주문하고 찾아가는 모바일용 사이트입니다.",
+      tags: ["React", "Firebase", "Mobile"],
+      links: [
+        {
+          type: "git",
+          link: "https://github.com/woajun/Winterfoodies"
+        },
+      ],
+    },
+    {
+      title: "태조왕건",
+      period: "23.08 ~ ",
+      description: "안쓰는 기기를 방범용으로 사용할 수 있게 해주는 사이트입니다.",
+      tags: ["React", "Firebase", "Security"],
+      links: [
+        {
+          type: "git",
+          link: "https://github.com/TaejoWangun/TaejoWangun"
+        },
+      ],
+    },
+    {
+      title: "위경도 검색기",
+      period: "23.10 ~ ",
+      description: "위경도를 간편하게 검색할 수 있는 사이트입니다.",
+      tags: ["React", "Firebase", "Geolocation"],
+      links: [
+        {
+          type: "git",
+          link: "https://github.com/woajun/kakao-coordinate-searcher"
+        },
+        {
+          type: "website",
+          link: "https://latlongsearch.netlify.app/"
+        },
+      ],
+    },
+    {
+      title: "juni components",
+      period: "23.12",
+      description: "자주 사용하는 리엑트 공용 컴포넌트를 모아뒀습니다.",
+      tags: ["React", "Tailwind", "Styled-Components"],
+      links: [
+        {
+          type: "git",
+          link: ""
+        },
+        {
+          type: "website",
+          link: ""
+        },
+      ],
+    },
+  ],
   experienceTitle: "경험",
   experiencesData: [
     {
