@@ -130,6 +130,7 @@ const kor = {
       period: "22.08 ~ 23.01",
       description: "근무자들이 근무시간을 최대한 공평하게 분배하기 위한 프로그램입니다.",
       tags: ["React", "Redux", "Firebase"],
+      imageLinks: [], 
       links: [
         {
           type: "git",
@@ -142,6 +143,7 @@ const kor = {
       period: "23.03 ~ 23.04",
       description: "업무의 편의를 위해 개발한 프로젝트로, 변수명 일관성 유지 및 엑셀파일을 특정 규칙으로 json 형태로 묶어 변환해주는 기능을 제공합니다.",
       tags: ["Node.js", "JavaScript", "Private"],
+      imageLinks: [], 
       links: [
         {
           type: "git",
@@ -154,6 +156,7 @@ const kor = {
       period: "23.01 ~ 23.05",
       description: "운동 시간을 측정하고 기록하는 프로그램입니다.",
       tags: ["React", "Firebase", "Chart.js"],
+      imageLinks: [], 
       links: [
         {
           type: "git",
@@ -166,6 +169,7 @@ const kor = {
       period: "23.08 ~ ",
       description: "겨울 간식을 주문하고 찾아가는 모바일용 사이트입니다.",
       tags: ["React", "Firebase", "Mobile"],
+      imageLinks: [], 
       links: [
         {
           type: "git",
@@ -178,6 +182,7 @@ const kor = {
       period: "23.08 ~ ",
       description: "안쓰는 기기를 방범용으로 사용할 수 있게 해주는 사이트입니다.",
       tags: ["React", "Firebase", "Security"],
+      imageLinks: [], 
       links: [
         {
           type: "git",
@@ -190,6 +195,7 @@ const kor = {
       period: "23.10 ~ ",
       description: "위경도를 간편하게 검색할 수 있는 사이트입니다.",
       tags: ["React", "Firebase", "Geolocation"],
+      imageLinks: [], 
       links: [
         {
           type: "git",
@@ -206,6 +212,7 @@ const kor = {
       period: "23.12",
       description: "자주 사용하는 리엑트 공용 컴포넌트를 모아뒀습니다.",
       tags: ["React", "Tailwind", "Styled-Components"],
+      imageLinks: [], 
       links: [
         {
           type: "git",
