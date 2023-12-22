@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
-import { SiTistory } from "react-icons/si";
+import { SiTistory, SiKakaotalk  } from "react-icons/si";
 import { IoLanguage } from "react-icons/io5";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
@@ -103,6 +103,14 @@ export default function Intro() {
         </a> */}
 
         <div className="flex gap-2">
+          <a
+            className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
+            href="https://open.kakao.com/o/sQF6eiZf"
+            target="_blank"
+          >
+            <SiKakaotalk  />
+          </a>
+
           <a
             className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
             href="https://junikang.tistory.com/"
