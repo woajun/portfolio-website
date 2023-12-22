@@ -15,6 +15,7 @@ import porftfolioTaejowangunImg from "@/public/portfolio_taejowangun.png";
 import porftfolioWinterfoodiesImg from "@/public/portfolio_winterfoodies.png";
 import porftfolioJuniComponentsImg from "@/public/portfolio_juni_components.png";
 import porftfolioReactivityImg from "@/public/portfolio_reactivity.png";
+import porftfolioScheduleDividerImg from "@/public/portfolio_schedule_divider.png";
 
 const kor = {
   home: "홈",
@@ -101,11 +102,11 @@ const kor = {
       links: [
         {
           type: "youtube",
-          link: ""
+          link: "https://youtu.be/U1G2fQTtxJs"
         },
         {
           type: "git",
-          link: ""
+          link: "https://github.com/woajun/jsp_angelPods_v2"
         },
       ],
     },
@@ -113,7 +114,7 @@ const kor = {
       title: "리팩토링 연습",
       period: "22.05 ~ 22.06",
       description: "리펙토링을 체화하기 위한 사이트를 제작했습니다.",
-      tags: ["JSP/Servlet", "Bootstrap", "Mysql", "AWS"],
+      tags: ["vue3", "typescript"],
       image: porftfolioReactivityImg,
       links: [
         {
@@ -123,10 +124,10 @@ const kor = {
       ],
     },
     {
-      title: "reactivity (22.07)",
-      period: "22.07",
+      title: "reactivity",
+      period: "22.07 ~ 22.07",
       description: "vue의 반응형을 바닐라 자바스크립트로 구현해 동작원리를 학습했습니다.",
-      tags: ["Vanilla JavaScript", "Vue", "Reactivity"],
+      tags: ["vue3"],
       image: porftfolioRefectoringImg,
       links: [
         {
@@ -136,11 +137,11 @@ const kor = {
       ],
     },
     {
-      title: "schedule-divider (22.08 ~ 23.01)",
+      title: "schedule-divider",
       period: "22.08 ~ 23.01",
       description: "근무자들이 근무시간을 최대한 공평하게 분배하기 위한 프로그램입니다.",
-      tags: ["React", "Redux", "Firebase"],
-      image: porftfolioAngelpodsImg, 
+      tags: ["vue3", "typescript"],
+      image: porftfolioScheduleDividerImg, 
       links: [
         {
           type: "git",
@@ -149,10 +150,10 @@ const kor = {
       ],
     },
     {
-      title: "json-grouper (23.03 ~ 23.04)",
+      title: "json-grouper",
       period: "23.03 ~ 23.04",
       description: "업무의 편의를 위해 개발한 프로젝트로, 변수명 일관성 유지 및 엑셀파일을 특정 규칙으로 json 형태로 묶어 변환해주는 기능을 제공합니다.",
-      tags: ["Node.js", "JavaScript", "Private"],
+      tags: ["vue3", "typescript", "bootstrap"],
       image: porftfolioJsongrouperImg, 
       links: [
         {
@@ -162,10 +163,10 @@ const kor = {
       ],
     },
     {
-      title: "피트니스 매니저 (23.01 ~ 23.05)",
+      title: "피트니스 매니저",
       period: "23.01 ~ 23.05",
       description: "운동 시간을 측정하고 기록하는 프로그램입니다.",
-      tags: ["React", "Firebase", "Chart.js"],
+      tags: ["vue3", "typescript", "Spring", "Chart.js"],
       image: porftfolioFitnessmanagerImg, 
       links: [
         {
@@ -176,9 +177,9 @@ const kor = {
     },
     {
       title: "윈터푸디스",
-      period: "23.08 ~ ",
+      period: "23.08 ~ 23.09",
       description: "겨울 간식을 주문하고 찾아가는 모바일용 사이트입니다.",
-      tags: ["React", "Firebase", "Mobile"],
+      tags: ["React", "Next", "typescript", "Tailwind"],
       image: porftfolioWinterfoodiesImg, 
       links: [
         {
@@ -189,9 +190,9 @@ const kor = {
     },
     {
       title: "태조왕건",
-      period: "23.08 ~ ",
+      period: "23.08 ~ 23.12",
       description: "안쓰는 기기를 방범용으로 사용할 수 있게 해주는 사이트입니다.",
-      tags: ["React", "Firebase", "Security"],
+      tags: ["React", "Next", "typescript", "Tailwind"],
       image: porftfolioTaejowangunImg, 
       links: [
         {
@@ -202,9 +203,9 @@ const kor = {
     },
     {
       title: "위경도 검색기",
-      period: "23.10 ~ ",
+      period: "23.10 ~ 23.11",
       description: "위경도를 간편하게 검색할 수 있는 사이트입니다.",
-      tags: ["React", "Firebase", "Geolocation"],
+      tags: ["React", "Next", "typescript", "Tailwind", "Geolocation"],
       image: porftfolioCoordinateSearcherImg, 
       links: [
         {
@@ -219,18 +220,18 @@ const kor = {
     },
     {
       title: "juni components",
-      period: "23.12",
+      period: "23.12 ~",
       description: "자주 사용하는 리엑트 공용 컴포넌트를 모아뒀습니다.",
       tags: ["React", "Tailwind", "Styled-Components"],
       image: porftfolioJuniComponentsImg, 
       links: [
         {
           type: "git",
-          link: ""
+          link: "https://github.com/woajun/juni-components"
         },
         {
           type: "website",
-          link: ""
+          link: "https://singular-scone-6e565b.netlify.app/"
         },
       ],
     },
