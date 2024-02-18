@@ -6,16 +6,17 @@ import { LuGraduationCap } from "react-icons/lu";
 import ubuilderImg from "@/public/ubuilder.png";
 import lotteRentacarImg from "@/public/lotte_rentacar.png";
 import odnImg from "@/public/odn.png";
-import porftfolioAngelpodsImg from "@/public/portfolio_angelpods.png";
-import porftfolioCoordinateSearcherImg from "@/public/portfolio_coordinate_searcher.png";
-import porftfolioFitnessmanagerImg from "@/public/portfolio_fitnessmanager.png";
-import porftfolioJsongrouperImg from "@/public/portfolio_jsongrouper.png";
-import porftfolioRefectoringImg from "@/public/portfolio_refectoring.jpg";
-import porftfolioTaejowangunImg from "@/public/portfolio_taejowangun.png";
-import porftfolioWinterfoodiesImg from "@/public/portfolio_winterfoodies.png";
-import porftfolioJuniComponentsImg from "@/public/portfolio_juni_components.png";
-import porftfolioReactivityImg from "@/public/portfolio_reactivity.png";
-import porftfolioScheduleDividerImg from "@/public/portfolio_schedule_divider.png";
+import portfolioYerieter from "@/public/portfolio_yerieter.png";
+import portfolioAngelpodsImg from "@/public/portfolio_angelpods.png";
+import portfolioCoordinateSearcherImg from "@/public/portfolio_coordinate_searcher.png";
+import portfolioFitnessmanagerImg from "@/public/portfolio_fitnessmanager.png";
+import portfolioJsongrouperImg from "@/public/portfolio_jsongrouper.png";
+import portfolioRefectoringImg from "@/public/portfolio_refectoring.jpg";
+import portfolioTaejowangunImg from "@/public/portfolio_taejowangun.png";
+import portfolioWinterfoodiesImg from "@/public/portfolio_winterfoodies.png";
+import portfolioJuniComponentsImg from "@/public/portfolio_juni_components.png";
+import portfolioReactivityImg from "@/public/portfolio_reactivity.png";
+import portfolioScheduleDividerImg from "@/public/portfolio_schedule_divider.png";
 
 const kor = {
   home: "홈",
@@ -94,11 +95,41 @@ const kor = {
   portfolioTitle: "포트폴리오",
   portfolioData: [
     {
+      title: "예리어터",
+      period: "24.02 ~",
+      description: "커플 다이어트 앱",
+      experiences: [
+        "ios, android 출시",
+        "하이브리드 앱",
+        "카카오톡 회원가입 & 로그인",
+        "모바일 노티피케이션 사용",
+        "모바일 카메라, 갤러리 기능사용",
+        "친구추가",
+        "채팅, 댓글",
+        "웹 BO 개발",
+        "1인 개발",
+        "풀스택",
+        "퍼블리싱",
+,      ],
+      tags: ["React", "Vite", "Supabase", "KakaoTalk", "Cordova", "ChartJs", "TanstackQuery", "husky", "TS", "ESLint"],
+      image: portfolioYerieter, 
+      links: [
+        {
+          type: "youtube",
+          link: "https://youtu.be/U1G2fQTtxJs"
+        },
+        {
+          type: "git",
+          link: "https://github.com/woajun/jsp_angelPods_v2"
+        },
+      ],
+    },
+    {
       title: "엔젤팟",
       period: "21.05 ~ 21.09",
       description: "1. 무선이어폰 일련번호를 등록하여, 추후 분실 했을 때 일련번호 조회로 찾아주는 분실물 조회 서비스를 기획 및 개발 했습니다. 2. 1인 프로젝트로, jsp로 개발하여 aws를 사용해 배포까지 했습니다.",
       tags: ["JSP/Servlet", "Bootstrap", "Mysql", "AWS"],
-      image: porftfolioAngelpodsImg, 
+      image: portfolioAngelpodsImg, 
       links: [
         {
           type: "youtube",
@@ -115,7 +146,7 @@ const kor = {
       period: "22.05 ~ 22.06",
       description: "리펙토링을 체화하기 위한 사이트를 제작했습니다.",
       tags: ["vue3", "typescript"],
-      image: porftfolioReactivityImg,
+      image: portfolioReactivityImg,
       links: [
         {
           type: "git",
@@ -128,7 +159,7 @@ const kor = {
       period: "22.07 ~ 22.07",
       description: "vue의 반응형을 바닐라 자바스크립트로 구현해 동작원리를 학습했습니다.",
       tags: ["vue3"],
-      image: porftfolioRefectoringImg,
+      image: portfolioRefectoringImg,
       links: [
         {
           type: "git",
@@ -141,7 +172,7 @@ const kor = {
       period: "22.08 ~ 23.01",
       description: "근무자들이 근무시간을 최대한 공평하게 분배하기 위한 프로그램입니다.",
       tags: ["vue3", "typescript"],
-      image: porftfolioScheduleDividerImg, 
+      image: portfolioScheduleDividerImg, 
       links: [
         {
           type: "git",
@@ -154,7 +185,7 @@ const kor = {
       period: "23.03 ~ 23.04",
       description: "업무의 편의를 위해 개발한 프로젝트로, 변수명 일관성 유지 및 엑셀파일을 특정 규칙으로 json 형태로 묶어 변환해주는 기능을 제공합니다.",
       tags: ["vue3", "typescript", "bootstrap"],
-      image: porftfolioJsongrouperImg, 
+      image: portfolioJsongrouperImg, 
       links: [
         {
           type: "git",
@@ -167,7 +198,7 @@ const kor = {
       period: "23.01 ~ 23.05",
       description: "운동 시간을 측정하고 기록하는 프로그램입니다.",
       tags: ["vue3", "typescript", "Spring", "Chart.js"],
-      image: porftfolioFitnessmanagerImg, 
+      image: portfolioFitnessmanagerImg, 
       links: [
         {
           type: "git",
@@ -180,7 +211,7 @@ const kor = {
       period: "23.08 ~ 23.09",
       description: "겨울 간식을 주문하고 찾아가는 모바일용 사이트입니다.",
       tags: ["React", "Next", "typescript", "Tailwind"],
-      image: porftfolioWinterfoodiesImg, 
+      image: portfolioWinterfoodiesImg, 
       links: [
         {
           type: "git",
@@ -193,7 +224,7 @@ const kor = {
       period: "23.08 ~ 23.12",
       description: "안쓰는 기기를 방범용으로 사용할 수 있게 해주는 사이트입니다.",
       tags: ["React", "Next", "typescript", "Tailwind"],
-      image: porftfolioTaejowangunImg, 
+      image: portfolioTaejowangunImg, 
       links: [
         {
           type: "git",
@@ -206,7 +237,7 @@ const kor = {
       period: "23.10 ~ 23.11",
       description: "위경도를 간편하게 검색할 수 있는 사이트입니다.",
       tags: ["React", "Next", "typescript", "Tailwind", "Geolocation"],
-      image: porftfolioCoordinateSearcherImg, 
+      image: portfolioCoordinateSearcherImg, 
       links: [
         {
           type: "git",
@@ -223,7 +254,7 @@ const kor = {
       period: "23.12 ~",
       description: "자주 사용하는 리엑트 공용 컴포넌트를 모아뒀습니다.",
       tags: ["React", "Tailwind", "Styled-Components"],
-      image: porftfolioJuniComponentsImg, 
+      image: portfolioJuniComponentsImg, 
       links: [
         {
           type: "git",
